@@ -69,26 +69,28 @@ var message1=document.getElementById("message").value;
     <main>
      <div class="wrapper">
        <h2>Contact Us</h2>
-       <form class="form2" onsubmit="return validate();" name="LoginForm" method="post"
-        action=>
+      <form class="form2" onsubmit="return validate();" name="LoginForm" method="post">
+        
+        <action="https://docs.google.com/forms/d/13W1Fof6yPHq5GS5PwrV6REASDw3mxTy8oE1ExUHOq5Q/formResponse">
+          
          <div class="inputfield">
-           <input type="text" placeholder="Name" id="name">
+           <input type="text" placeholder="Name" id="name" name="entry.1466004530">
          </div>
 
           <div class="inputfield">
-           <input type="text" placeholder="Phone" id="phone">
+           <input type="text" placeholder="Phone" id="phone" name="entry.905130274">
          </div>
 
           <div class="inputfield">
-           <input type="text" placeholder="Email" id="email">
+           <input type="text" placeholder="Email" id="email" name="entry.459175920">
          </div>
 
           <div class="inputfield">
-           <textarea placeholder="Message" id="message"></textarea>
+           <textarea placeholder="Message" id="message" name="entry.896356107"></textarea>
          </div>
 
          <div class="btn">
-           <input type="submit">
+           <input type="submit" onclick="return check(this.form)" value="login">
          </div>
 
          <div id="error"></div>
