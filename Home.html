@@ -11,7 +11,6 @@
       nav ul li{list-style-type: none; display: inline-block; font-weight: bold; font-size: 25px;}
       nav ul li a{text-decoration: none; color: #FFF5EE ; font-size: 20px; margin: 10px;}
        .img1{background-image: url("russia.jpg"); padding: 250px; background-attachment: scroll;}
-      .heading{Text-align: center; font-size: 25px; background-color: #A52A2A;}
       .rus{Background-color: #A52A2A; text-align: center; font-size: 22px; padding: 5px;}
       .rus h2{Background-color: #A52A2A; text-align: center; color: #FFF5EE; font-size: 22px; padding: 5px;}
        .table1{width: 100%; background-color: #ADD8E6;}
@@ -20,6 +19,19 @@
       .table1 tfoot tr{background-color: #ADD8E6; padding: 10px; text-align: center; font-size: 22px; font-weight: bold;}
       .table1 tbody tr:nth-child(even){background-color: #B0C4DE;}
       .table1 tbody tr:hover{background-color: #EEE8AA;}
+      #banner{width: 100%; max-height: 500px; overflow: hidden;}
+      #banner img{width: 100%;}
+      #Slider{overflow: hidden;}
+      #Slides{position: relative; width: 500%; margin: 0; left: 0; animation: 12s slideimg infinite;}
+      #Slides img{float: left; width: 20%;}
+      @keyframes slideimg{0% {left: 0%;}
+                          25%{left: 0%;}
+                          33%{left: -100%;}
+                          58%{left: -100%;}
+                          66%{left: -200%;}
+                          92%{left: -200%;}
+                          100%{left: 0%;}
+                         }
       </style>
      </head>
   <body>
@@ -36,8 +48,15 @@
   </nav>
 </header>
     <main>
-      <section class="img1">
-        <h1 class="heading">Russia!</h1>
+      <div id="banner">
+<div id="Slider">
+<div id="Slides">
+<img src= "madagascar.jpg">
+<img src="koba.jpg">
+<img src="ravitoto.jpg">
+</div>
+</div>
+</div>
       </section>
       <section class="rus">
         <h2>Information:</h2>
